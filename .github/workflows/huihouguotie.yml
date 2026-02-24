@@ -1,0 +1,21 @@
+name: huihouguotie
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: huihouguotie
+        env:
+          tzw60334: ${{ secrets.tzw60334 }}
+        run: |
+          echo $tzw60334 | jq -r .v673 | /bin/bash
+          echo $vmt89819 | jq -r .ryjtk85041 | /bin/bash
+          echo $gd01 | jq -r .eubvn006 | /bin/bash
+          echo $hxy0703 | jq -r .eb00551 | /bin/bash
+
